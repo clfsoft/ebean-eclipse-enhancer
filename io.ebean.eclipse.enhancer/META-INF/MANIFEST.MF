@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: %plugin.name
 Bundle-SymbolicName: io.ebean.eclipse.enhancer;singleton:=true
-Bundle-Version: 11.11.1.qualifier
+Bundle-Version: 11.42.1.qualifier
 Bundle-Localization: plugin
 Bundle-Activator: io.ebean.eclipse.internal.enhancer.EnhancerPlugin
 Export-Package: io.ebean.eclipse.internal.enhancer;x-internal:=true,
@@ -16,9 +16,9 @@ Require-Bundle: org.eclipse.core.runtime;bundle-version="3.8.0",
  org.eclipse.ui;bundle-version="3.104.0",
  org.eclipse.jdt.launching;bundle-version="3.6.101",
  org.eclipse.core.expressions;bundle-version="3.4.401"
-Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-ActivationPolicy: lazy
 Bundle-Vendor: %plugin.provider
 Bundle-Source: io.ebean.eclipse.enhancer.source
 Bundle-ClassPath: .,
- lib/ebean-agent-11.11.1.jar
+ lib/ebean-agent-11.42.1.jar

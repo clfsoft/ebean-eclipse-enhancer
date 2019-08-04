@@ -304,14 +304,14 @@ public final class EnhanceBuilder extends IncrementalProjectBuilder {
     // TODO: Sort out this hack to find manifest file in main/resources
     IFile ebmf = project.getFile("src/main/resources/ebean.mf");
     //IFile ebmf = findSourcePath(project, "ebean.mf");
-    if (ebmf != null && ebmf.exists()) {
-      EnhancerPlugin.logInfo("... found ebean manifest file");
-      try {
-        manifest.addResource(ebmf.getContents());
-      } catch (IOException e) {
-        EnhancerPlugin.logInfo("Error reading ebean.mf" + e.getMessage()); 
-      }
-    }
+//   if (ebmf != null && ebmf.exists()) {
+//     EnhancerPlugin.logInfo("... found ebean manifest file");
+//     try {
+//       manifest.addResource(ebmf.getContents());
+//     } catch (IOException e) {
+//       EnhancerPlugin.logInfo("Error reading ebean.mf" + e.getMessage()); 
+//     }
+//   }
     
     Transformer transformer = new Transformer(reader, "debug=" + enhanceDebugLevel, manifest);
     transformer.setLogout(new MessageOutput() {
